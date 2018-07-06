@@ -1,0 +1,25 @@
+a='''东单.png
+        东四十条.png
+        东大桥.png
+        中关村.png
+        丰台科技园.png
+        亮马桥.png
+        动物园.png
+        复兴门.png
+        建国门.png
+        望京东.png
+        朝阳门.png
+        永安里.png
+        灯市口.png
+        金台夕照.png
+        阜成门.png'''
+b=a.split()
+c=b[1::2]
+x=[]
+for i in range(len(b)):
+    d=b[i].split('.')
+    x.append(d[0])
+print(x)
+print(type(x))
+s=','.join(x)
+print(s)
